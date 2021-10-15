@@ -1,0 +1,37 @@
+<template>
+    <span>
+        <template if:false={_hasError}>
+            <template if:true={_hasMedia}>
+                <span class="slds-pill__icon_container">
+                    <slot></slot>
+                </span>
+            </template>
+        </template>
+        <template if:true={_hasError}>
+            <lightning-primitive-icon
+                class="slds-icon_container slds-pill__icon_container"
+                title={i18n.pillError}
+                icon-name="utility:error"
+                variant="bare"
+                svg-class="slds-icon slds-icon-text-error">
+            </lightning-primitive-icon>
+            <span class="slds-assistive-text">{i18n.pillWarning}</span>
+        </template>
+        <template if:true={hasHref}>
+            <a href={href} class="slds-pill__action" title={label}>
+                <span class="slds-pill__label">{label}</span>
+            </a>
+        </template>
+        <template if:false={hasHref}>
+            <span class="slds-pill__label" title={label}>{label}</span>
+        </template>
+        <lightning-button-icon icon-name="utility:close"
+                            class="slds-pill__remove"
+                            variant="bare"
+                            onclick={handleRemove}
+                            title={i18n.pillRemove}
+                            tabindex={_tabIndex}
+                            alternative-text={i18n.pillRemove}>
+        </lightning-button-icon>
+    </span>
+</template>

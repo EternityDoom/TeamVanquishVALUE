@@ -1,0 +1,15 @@
+<template>
+    <lightning-accordion
+        active-section-name={activeSectionName}
+        allow-multiple-sections-open={allowMultipleSectionsOpen}
+        >
+        <template for:each={sections} for:item="section">
+            <lightning-accordion-section
+                key={section.name}
+                name={section.name}
+                label={section.label}>
+                <p>{section.content}</p>
+            </lightning-accordion-section>
+        </template>
+    </lightning-accordion>
+</template>

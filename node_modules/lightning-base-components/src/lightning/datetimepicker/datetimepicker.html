@@ -1,0 +1,56 @@
+<template>
+    <div class="slds-form" tabindex="-1">
+        <fieldset class="slds-form-element slds-form-element_compound">
+            <template if:false={hasExternalLabel}>
+                <legend class={computedLabelClass} >
+                    <template if:true={required}>
+                        <abbr class="slds-required" title={i18n.required}>*</abbr>
+                    </template>
+                    {label}
+                </legend>
+                <lightning-helptext if:true={fieldLevelHelp} content={fieldLevelHelp}></lightning-helptext>
+            </template>
+            <div class="slds-form-element__control">
+                <div class="slds-form-element__group">
+                    <div class="slds-form-element__row">
+                        <lightning-datepicker
+                            class="slds-form-element"
+                            autocomplete={autocomplete}
+                            min={dateMin}
+                            max={dateMax}
+                            label={i18n.date}
+                            name={name}
+                            variant={variant}
+                            placeholder={placeholder}
+                            readonly={readOnly}
+                            disabled={disabled}
+                            date-style={dateStyle}
+                            onfocus={handleDatepickerFocus}
+                            onblur={handleDatepickerBlur}
+                            onchange={handleDateChange}>
+                        </lightning-datepicker>
+
+                        <lightning-timepicker
+                            class="slds-form-element"
+                            autocomplete={autocomplete}
+                            label={i18n.time}
+                            name={name}
+                            variant={variant}
+                            time-style={timeStyle}
+                            placeholder={placeholder}
+                            readonly={readOnly}
+                            disabled={disabled}
+                            onfocus={handleTimepickerFocus}
+                            onblur={handleTimepickerBlur}
+                            onchange={handleTimeChange}>
+                        </lightning-timepicker>
+                    </div>
+                </div>
+            </div>
+            <template if:true={customErrorMessage}>
+                <div data-error-message id="errormessage" class="slds-form-element__help" aria-live="assertive">{customErrorMessage}</div>
+            </template>
+
+        </fieldset>
+    </div>
+</template>

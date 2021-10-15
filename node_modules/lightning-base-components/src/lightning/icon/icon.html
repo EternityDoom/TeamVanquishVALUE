@@ -1,0 +1,9 @@
+<template>
+    <lightning-primitive-icon
+        icon-name={_iconName}
+        size={size}
+        variant={variant}
+        src={_src}>
+    </lightning-primitive-icon>
+    <span if:true={alternativeText} class="slds-assistive-text">{alternativeText}</span>
+</template>

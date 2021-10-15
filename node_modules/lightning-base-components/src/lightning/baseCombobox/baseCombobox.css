@@ -1,0 +1,10 @@
+.slds-inline-logo {
+    height: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* This is hiding the caret of the input for the read-only combobox, should be moved to SLDS. */
+input[aria-readonly="true"] {
+    caret-color: transparent;
+}

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "lightning-base-components": "^1.13.7-alpha"
+  }
+}

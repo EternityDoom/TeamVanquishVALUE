@@ -1,0 +1,32 @@
+<template>
+    <span>
+        <template if:true={_hasMedia}>
+            <span class="slds-pill__icon_container">
+                <slot></slot>
+            </span>
+        </template>
+        <span class="slds-pill__label" title={label}>{label}</span>
+        <template if:false={useRemoveButton}>
+            <lightning-primitive-icon
+                class="slds-icon_container slds-pill__remove"
+                title={i18n.pillRemove}
+                icon-name="utility:close"
+                onclick={handleRemoveClick}
+                svg-class="slds-icon slds-icon_x-small slds-icon-text-default"
+                variant="bare">
+            </lightning-primitive-icon>
+            <span class="slds-assistive-text">{assistiveText}</span>
+        </template>
+        <template if:true={useRemoveButton}>
+            <lightning-button-icon
+                icon-name="utility:close"
+                class="slds-pill__remove"
+                variant="bare"
+                onclick={handleRemoveClick}
+                title={i18n.pillRemove}
+                tabindex={_tabIndex}
+                alternative-text={assistiveText}>
+            </lightning-button-icon>
+        </template>
+    </span>
+</template>

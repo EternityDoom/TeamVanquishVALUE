@@ -1,0 +1,15 @@
+---
+examples:
+    - name: basic
+      label: Basic Vertical Navigation
+      description: A vertical navigation includes at least one navigation section and item.
+---
+
+A `lightning-vertical-navigation-item` component is a navigation item within `lightning-vertical-navigation`.
+
+For more information, see the
+[lightning-vertical-navigation](bundle/lightning-vertical-navigation/documentation) documentation.
+
+#### Source Code
+
+`lightning-vertical-navigation-item` is available in the [Base Components Recipes GitHub repository](https://github.com/salesforce/base-components-recipes#documentation). It's transpiled into the `c` namespace so that you can use it in your own projects.
