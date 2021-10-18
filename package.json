@@ -3,6 +3,7 @@
     "author": "EternityDoom",
     "bugs": "https://github.com/EternityDoom//issues",
     "dependencies": {
+        "@salesforce-ux/design-system": "^2.16.2",
         "compression": "^1.7.4",
         "express": "^4.17.1",
         "helmet": "^4.6.0",
