@@ -1,0 +1,10 @@
+.cardbox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    border: 5px solid #3af;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #9bd;
+    color: black;
+}
