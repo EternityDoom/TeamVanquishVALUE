@@ -1,24 +1,9 @@
 <template>
     <div class="titlebar"><h1>Head First Games</h1></div>
 
-    <!-- LWC sample component <my-greeting> -->
-    <div class="center greeting">
-        <!-- <my-greeting speed="slow"></my-greeting> -->
-        <my-greeting speed="medium"></my-greeting>
-        <!-- <my-greeting speed="fast"></my-greeting> -->
-    </div>
-
-    <!-- Page code -->
-    <div class="center">
-        <div class="container">
-            <!-- prettier-ignore -->
-            <p class="info">
-                Edit <strong class="code">src/client/modules/my/app/app.html</strong>
-                <br />and save for live reload.
-            </p>
-        </div>
-        <div>
-            <a href="https://lwc.dev" class="link" target="_blank">Learn LWC</a>
-        </div>
+    <div class="cardpane">
+        <my-expandingcard imagesource="./resources/george.png" detailtext="Swing from the ledges of Death Island with Grappling-Gun George!"></my-expandingcard>
+        <my-expandingcard imagesource="./resources/telescapist.png" detailtext="Use psychic powers to rearrange the world and escape in Telescapist!"></my-expandingcard>
+        <my-expandingcard imagesource="./resources/kcafe.png" detailtext="Slay giant monsters and cook them up for customers in Kaiju Café!"></my-expandingcard>
     </div>
 </template>

@@ -1,8 +1,10 @@
 <template>
     <div class="cardbox" onclick={handleClick}>
-        <img class="cardimg" src={imageSource}>
-        <template if:true{expanded}>
-            <p class="detailtext">{detailText}</p>
+        <img class="cardimg" src={imagesource}>
+
+        <template if:true={expanded}>
+            <p class="detailtext">{detailtext}</p>
         </template>
+
     </div>
 </template>

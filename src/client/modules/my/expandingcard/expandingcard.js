@@ -3,18 +3,23 @@ import { LightningElement, api } from 'lwc';
 export default class ExpandingCard extends LightningElement {
     imageFilePath;
     paragraphText = "Lorem ipsum";
+    expanded = false;
 
     @api
-    set imageSource(value) {
+    set imagesource(value) {
         this.imageFilePath = value;
     }
 
-    get imageSource(){ return this.imageFilePath; }
+    get imagesource(){ return this.imageFilePath; }
 
     @api
-    set detailText(value) {
+    set detailtext(value) {
         this.paragraphText = value;
     }
 
-    get detailText() { return this.paragraphText; }
+    get detailtext() { return this.paragraphText; }
+
+    handleClick() {
+        this.expanded = !this.expanded;
+    }
 }
