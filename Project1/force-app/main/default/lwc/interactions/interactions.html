@@ -1,0 +1,26 @@
+<template>
+    <lightning-tabset variant="scoped">
+        <lightning-tab label="Businesses">
+            <div class="page-section page-header">
+                <h2>Are you a Buisness owner that wants a section in "The Store"? Then you should fill out this form.</h2>
+            </div>
+            
+             <lightning-record-form object-api-name={lead} fields={fieldsLead} onsuccess={handleSuccess}></lightning-record-form>
+            
+            We will contact you to get things going!!
+        </lightning-tab>
+        <lightning-tab label="Guests">
+            <div class="page-section page-header">
+                <h2>Are you a walker who has suggestions, comments, or complaints? Then you should fill out this form.</h2>
+            </div>
+
+            <lightning-record-form object-api-name={guest} fields={fieldsCase} onsuccess={handleSuccess}></lightning-record-form>
+
+            Two Content !
+        </lightning-tab>
+        <lightning-tab label="Current Guest Suggestions">
+             
+            Three Content !
+        </lightning-tab>
+    </lightning-tabset>
+</template>

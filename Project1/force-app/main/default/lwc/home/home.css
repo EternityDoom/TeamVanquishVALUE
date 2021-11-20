@@ -1,0 +1,25 @@
+.c-container {
+    border: 1px solid #d8dde6;
+    margin: 10px 0 20px 0;
+}
+.page-section {
+    border: solid 1px #ccc;
+    padding: 1rem;
+}
+.page-header{
+    text-align: center;
+}
+.page-footer {
+    height: 50px;
+}
+.page-main {
+    background: #f8f8f8;
+}
+.page-left{
+    background: #f0efef;
+    text-align: left;
+}
+.page-right {
+    background: #f0efef;
+    text-align: right;
+}
