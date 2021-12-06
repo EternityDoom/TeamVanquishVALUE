@@ -3,11 +3,10 @@
     <fullName>Rating__c</fullName>
     <externalId>false</externalId>
     <label>Rating</label>
-    <required>false</required>
+    <required>true</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -22,7 +21,7 @@
             </value>
             <value>
                 <fullName>3</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>3</label>
             </value>
             <value>
