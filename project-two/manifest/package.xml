@@ -31,10 +31,19 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Author__c</members>
+        <members>Recommendation__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>Author__c-Author Layout</members>
         <members>Product2-Product Layout</members>
         <members>Recommendation__c-Recommendation Layout</members>
         <name>Layout</name>
+    </types>
+    <types>
+        <members>createRecommendations</members>
+        <name>LightningComponentBundle</name>
     </types>
     <types>
         <members>Author__c.All</members>
