@@ -1,5 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>project-two</fullName>
+    <types>
+        <members>ProjectTwoBooksController</members>
+        <members>recommendationcDuplicateCheck</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>recommendationscTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>ProjectTwoBooks</members>
+        <members>ProjectTwoBooksMissingAuthors</members>
+        <members>ProjectTwoBooksRecommendations</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Author__c.Biography__c</members>
+        <members>Case.Product__c</members>
+        <members>Product2.Author__c</members>
+        <members>Recommendation__c.Book__c</members>
+        <members>Recommendation__c.Rating__c</members>
+        <members>Recommendation__c.Review__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Author__c</members>
+        <members>Recommendation__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Author__c-Author Layout</members>
+        <members>Product2-Product Layout</members>
+        <members>Recommendation__c-Recommendation Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Author__c.All</members>
+        <members>Recommendation__c.All</members>
+        <name>ListView</name>
+    </types>
     <types>
         <members>*</members>
         <name>ApexClass</name>
@@ -32,5 +73,5 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
-    <version>52.0</version>
+    <version>53.0</version>
 </Package>
