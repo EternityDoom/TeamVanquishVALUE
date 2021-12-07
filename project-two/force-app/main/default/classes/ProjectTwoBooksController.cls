@@ -3,7 +3,7 @@ public with sharing class ProjectTwoBooksController {
   @AuraEnabled
   public static List<Product2> getBooks() {
     return [SELECT Id, Name, Description
-  			FROM Product2];
+  			FROM Product2 WHERE Family = 'Book'];
   }
     
   @AuraEnabled
