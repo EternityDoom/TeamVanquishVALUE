@@ -14,7 +14,7 @@ export default class LeadEditForm extends LightningElement {
     @api objectApiName = CONTACT_OBJECT;
     fields = [ACCOUNTNAME_FIELD, PHONE_FIELD, EMAIL_FIELD, MAILINGADDRESS_FIELD];
 
-    accountname = 
+    accountname = ACCOUNTNAME_FIELD;
     name = NAME_FIELD;
     phone = PHONE_FIELD;
     email = EMAIL_FIELD;
