@@ -1,10 +1,10 @@
 @isTest
-private class AccountTriggerTest {
+public class ContactTriggerTest {
   static testMethod void validateAccount(){
-    Account a = new Account(Name='John');
+    Contact c = new Contact(Phone='2222222222');
     Test.startTest();
 
-    insert a;
+    insert c;
 
     Test.stopTest();
   }
