@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="message" type="String" default="Awaiting your submission"/>
+	<aura:attribute name="binal" type="Boolean" default="true"/>
+    <aura:attribute name="binal2" type="Boolean" default="false"/>
+    <aura:attribute name="binal3" type="Boolean" default="false"/>
+     <lightning:card title="Daniel's Aura Addition" iconName="custom:custom46">
+        <div class="c-container">
+            <lightning:layout>
+                <aura:renderif isTrue="{!v.binal}">
+                	<lightning:layoutItem size="4">
+                    	{!v.message}
+                    	<c:leadForm onsubmit="{!c.handleSubmit}" onsuccess="{!c.handleSuccess}"/>
+                        <aura:renderif isTrue="{!v.binal3}">
+                            <lightning:icon iconName="utility:warning" alternativeText="Warning!" title="The save button was clicked!" size="large"/>
+                        </aura:renderif>
+                	</lightning:layoutItem>
+                </aura:renderif>
+                <aura:renderif isTrue="{!v.binal2}">
+                	<lightning:layoutItem size="4">
+                    	{!v.message}
+                        <img src="{!$ContentAsset.checkguy}"/>
+                	</lightning:layoutItem>
+                </aura:renderif>
+            </lightning:layout>
+        </div>
+    </lightning:card>
+</aura:component>
