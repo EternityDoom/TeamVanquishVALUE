@@ -1,5 +1,11 @@
 ({
-    init : function(component, event, helper) {
-      component.find('reviewslwc').reviewList();
+  init : function(component, row) {
+    var action = component.get("c.deleteRecord");
+    action.setParams({
+      "toDelete":row
+    });
+    $A.enqueueAction(action);
     }
+ 
+  
 })

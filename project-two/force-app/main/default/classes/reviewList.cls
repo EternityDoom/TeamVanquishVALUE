@@ -8,4 +8,8 @@ public with sharing class reviewList {
             LIMIT 10
         ];
     }
+    @AuraEnabled
+    public static void deleteRecord(Recommendation__c toDelete){
+    delete toDelete;
+}
 }
