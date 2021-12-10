@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="booksController">
+  <aura:attribute name="Books" type="Product2" />
+  <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+
+  <!--Render Manuel LWC component prodItem-->
+  <c:prodItem/>
+
+  <lightning:card title="Books Display">
+    <aura:set attribute="body">
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer" style="display: block; height: 200px; overflow: auto;">
+        <thead>
+          <tr class="slds-text-title_caps">
+            <th scope="col">Book Titles</th>
+            <th scope="col">Book Titles</th>
+            <th scope="col">Book Descriptions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <aura:iteration items="{!v.Books}" var="books">
+            <tr scope="row">
+              <td> {!books.Name}</td>
+              <td> {!books.Author__r.Name}</td>
+              <td> {!books.Description}</td>
+            </tr>
+          </aura:iteration>
+        </tbody>
+      </table>
+    </aura:set>
+  </lightning:card>
+ 
+  
+</aura:component>
