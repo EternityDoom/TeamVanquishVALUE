@@ -1,13 +1,16 @@
 @isTest
 public class ContactTriggerTest {
-  static testMethod void validateAccount(){
-    Contact c = new Contact(Phone='2222222222');
-    Test.startTest();
+    @isTest static void contactCheckTest(){
+        Contact c = new Contact();
+        c.LastName = 'Test';
+        c.Email = 'testeeesttt321@gmail.com';
 
-    insert c;
+        Test.startTest();
+        Database.SaveResult sr = Database.insert(c, false);
+        Test.stopTest();
+        
+        
+             
+    }
 
-    Test.stopTest();
-  }
-   
-   
 }
