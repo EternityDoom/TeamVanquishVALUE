@@ -8,4 +8,5 @@ export default class ProdItem extends LightningElement {
             this.data = data;
         }
     }
+    
 }

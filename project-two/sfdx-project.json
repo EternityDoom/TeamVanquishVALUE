@@ -1,12 +1,19 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "Manuel_UnlockedPackage",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "name": "project-two",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "53.0",
+    "packageAliases": {
+        "Manuel_UnlockedPackage": "0Ho5f000000fxebCAA",
+        "Manuel_UnlockedPackage@0.1.0-1": "04t5f0000003cMIAAY"
     }
-  ],
-  "name": "project-two",
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "53.0"
 }
