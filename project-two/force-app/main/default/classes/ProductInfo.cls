@@ -1,4 +1,5 @@
 public with sharing class ProductInfo {
+    
     @AuraEnabled(cacheable=true)
     public static List<SObject> getRecordInfo(){
         return [
