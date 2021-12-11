@@ -17,7 +17,7 @@
         <thead>
           <tr class="slds-text-title_caps">
             <th scope="col">Book Titles</th>
-            <th scope="col">Book Titles</th>
+            <th scope="col">Book Author</th>
             <th scope="col">Book Descriptions</th>
           </tr>
         </thead>
