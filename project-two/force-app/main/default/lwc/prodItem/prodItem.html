@@ -2,12 +2,12 @@
     <div class="slds-size_4-of-5">
         <div class="box">
             <template if:true={recordInfo.data}>
-                    <template for:each={recordInfo.data} for:item="Prod">
+                    <template class="card" for:each={recordInfo.data} for:item="Prod">
                         <lightning-carousel class="src" disable-auto-scroll key={Prod.name}>
                             <lightning-carousel-image
-                            class="src" src={Prod.DisplayUrl}
+                            src={Prod.DisplayUrl}
                             header={Prod.Name}
-                            alternative-text={altText}
+                            class="limit" alternative-text={altText}
                             ></lightning-carousel-image> 
                         </lightning-carousel>
                     </template>

@@ -1,10 +1,16 @@
 .box{
     display: flex;
-    gap: 300px 90px;
+    gap: 300px 70px;
     
 }
+
 .src{
-    width:  100px;
+    width:  200px;
     height: 100px;
     object-fit: cover;
+    margin-bottom:275px;
+}
+.limit{
+    word-wrap: break-word;
+    white-space: normal;
 }

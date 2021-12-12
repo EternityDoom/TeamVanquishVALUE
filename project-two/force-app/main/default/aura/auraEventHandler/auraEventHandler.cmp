@@ -3,7 +3,7 @@
 	<aura:handler name="init" value="{! this}" action="{! c.doInit}" />   
     <aura:attribute name="checkValue" type="Boolean" default="false" />
     
-    <lightning:button label="Would you like to leave a review?" title="Change value" onclick="{! c.resetCheckValue }"/>
+    <lightning:button class="button" label="Would you like to leave a review?" title="Change value" onclick="{! c.resetCheckValue }"/>
 
         <aura:if isTrue="{! v.checkValue}">
 			<c:createRecommendations/>
