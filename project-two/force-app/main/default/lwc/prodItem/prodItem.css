@@ -1,5 +1,10 @@
 .box{
     display: flex;
     gap: 300px 90px;
-
+    
+}
+.src{
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
 }

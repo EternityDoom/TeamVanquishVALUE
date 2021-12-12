@@ -1,5 +1,5 @@
 @isTest
-public class TestPriceBookEntryTrigger {
+public class TestPriceBookEntry {
 	
     @isTest 
     static void createProduct(){
