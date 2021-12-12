@@ -3,6 +3,7 @@ import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import reviews from '@salesforce/apex/reviewList.getReviewList';
 
 import REVIEWS from '@salesforce/schema/Recommendation__c';
+import NAME_FIELD from '@salesforce/schema/Recommendation__c.booknam__c';
 import BOOK_FIELD from '@salesforce/schema/Recommendation__c.Book__c';
 import RATING_FIELD from '@salesforce/schema/Recommendation__c.Rating__c';
 import REVIEW_FIELD from '@salesforce/schema/Recommendation__c.Review__c';
@@ -14,7 +15,7 @@ export default class Reviews extends LightningElement {
     @api recordId;
     @api reviewsTab = REVIEWS;
     @track columns = [
-        {label: 'Book', fieldName: 'Book__r.Name', type: 'text'},
+        {label: 'Book', fieldName: 'booknam__c', type: 'text'},
         {label: 'Rating', fieldName: 'Rating__c', type: 'picklist'},
         {label: 'Review', fieldName: 'Review__c', type: 'text'},
         {label: 'Date Reviewed', fieldName: 'Review_Date__c', type: 'date'}
