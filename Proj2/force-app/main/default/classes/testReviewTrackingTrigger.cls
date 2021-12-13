@@ -1,36 +1,23 @@
 @isTest
-public with sharing class testReviewTrackingTrigger {
-    private static testMethod void testReviewTracker(){
+public  class testReviewTrackingTrigger {
+    @testSetup static void prodMake(){
+        Product2 testProd = new Product2(Name = 'test');
+        insert testProd;
+    }
+    @isTest
+    private static void testReviewTracker(){
+        Test.startTest();
+        List<Product2> testProd = [SELECT Id FROM Product2 WHERE Name = 'test' LIMIT 1];
         List<Recommendation__c> testRevList = new List<Recommendation__c>();
         Recommendation__c testRev;
         for(Integer i=0; i<5;i++){
-            testRev = new Recommendation__c();
-            switch on i{
-                when 0{
-                    testRev.Rating__c = '1';
-                    break;
-                }
-                when 1{
-                    testRev.Rating__c = '2';
-                    break;
-                }
-                when 2{
-                    testRev.Rating__c = '3';
-                    break;
-                }
-                when 3{
-                    testRev.Rating__c = '4';
-                    break;
-                }
-                when 4{
-                    testRev.Rating__c = '5';
-                    break;
-                }
-            }            
-            testRevList.add(testRev);
+            testRev = new Recommendation__c(rating__c = String.valueOf(i));   
+           	testRevList.add(testRev);
         }
-        Test.startTest();
+        
         insert testRevList;
+        Product2 t = [SELECT Id, Number_of_Reviews__c, Total_Review_Score__c FROM Product2 WHERE Name='test'];
+        system.assertEquals(t.Number_of_Reviews__c, 5);
         Test.stopTest();
     }
 }
