@@ -1,4 +1,4 @@
-# Team Project 1
+# Project 1 - Experience Cloud & Lightning Web Components
 
 ## Project Description
 
