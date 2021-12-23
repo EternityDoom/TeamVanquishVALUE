@@ -1,4 +1,4 @@
-# Team Project 2
+# Project 2 - Experience Cloud, Lightning Aura Components, & Lightning Web Components
 
 ## Project Description
 
