@@ -41,6 +41,5 @@ To-do list:
 > Here list the people who have contributed to this project. (ignore this section, if its a solo project)
 
 ## License
-
-This project uses the following license: [<license_name>](<link>).
+This project uses the following license: [MIT License](https://choosealicense.com/licenses/mit/).
 
