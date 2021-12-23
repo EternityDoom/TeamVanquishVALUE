@@ -24,24 +24,30 @@ To-do list:
 * Create Aura components where necessary 
 
 ## Getting Started
-   
-(include git clone command)
-(include all environment setup steps)
+* Git commands:
+* Git clone 
+* Git add
+* Git commit
+* Git push
 
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
-
-- All the `code` required to get started
-- Images of what it should look like
+* Salesforce CLI:
+* sfdx force:project:create --projectname Bookstore
+* sfdx force:org:create -f project-scratch-def.json --nonamespace
+* sfdx force:package:create
+* sfdx force:package:version:create
+* sfdx force:package:install
 
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+![image](https://user-images.githubusercontent.com/92421520/147266370-fa2f4950-b93e-40a7-bdd4-cb6cf9fc7065.png)
+* Contact form with custom error message for invalid input
 
 ## Contributors
 
-> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
+Manuel Guzman
+Jason Schley
+Daniel Ferraro
+Shayan Parvizi
 
 ## License
-
-This project uses the following license: [<license_name>](<link>).
+This project uses the following license: [MIT License](https://choosealicense.com/licenses/mit/).
