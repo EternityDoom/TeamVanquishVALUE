@@ -1,25 +1,21 @@
-# PROJECT NAME
+# Team Project 2
 
 ## Project Description
 
-Here goes your awesome project description!
+Working in a small team, developers are tasked with creating a consistently-styled Experience Cloud site for a business using both Lightning Aura and Lightning web components to display knowledge of and comfortability with both frameworks. The team is tasked with creating Apex controllers and Apex triggers to implement backend logic, as well as writing sufficient test coverage for that Apex code. In addition, the team is required to develop using the Package Based Development model and make use of proper git/GitHub branching procedures.
 
 ## Technologies Used
 
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* Visual Studio Code
+* Apex
+* JavaScript
+* Salesforce Platform Tools
 
 ## Features
 
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+* Display Datatable for recently submitted reviews
+* Track statistics of review submissions by their related product
 
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
 
 ## Getting Started
    
