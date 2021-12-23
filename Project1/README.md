@@ -1,14 +1,14 @@
-# PROJECT NAME
+# Team Project 1
 
 ## Project Description
 
-Here goes your awesome project description!
+Tasked with creating a compelling experience from a business previously explored, associates create an individual project with Lightning web components as the primary user interface. These are surfaced through the use of Experience Cloud to create a customer or partner experience site that allows for the use of these new features, along with supporting Apex classes/triggers and declarative customizations.
 
 ## Technologies Used
 
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* Visual Studio Code
+* Apex
+* Salesforce Platform Tools
 
 ## Features
 
