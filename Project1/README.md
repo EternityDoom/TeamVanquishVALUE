@@ -8,18 +8,17 @@ Tasked with creating a compelling experience from a business previously explored
 
 * Visual Studio Code
 * Apex
+* HTML
+* JavaScript
+* CSS
 * Salesforce Platform Tools
 
 ## Features
 
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+* Web-to-Lead form for potential costomers to initiate contact with the businees
+* Web-to-Case form to allow quest users to offer suggestions to help a growing business improve
+* Display of current active suggestions
 
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
 
 ## Getting Started
    
