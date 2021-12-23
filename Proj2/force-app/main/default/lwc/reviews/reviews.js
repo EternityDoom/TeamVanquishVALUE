@@ -12,6 +12,8 @@ import DATE_FIELD from '@salesforce/schema/Recommendation__c.Review_Date__c';
 
 
 export default class Reviews extends LightningElement {
+    
+    //Code for data table
     @api recordId;
     @api reviewsTab = REVIEWS;
     @track columns = [
@@ -21,7 +23,8 @@ export default class Reviews extends LightningElement {
         {label: 'Date Reviewed', fieldName: 'Review_Date__c', type: 'date'}
     ];
     @track error;
-    @track reviewList;
+    @track reviewList;    
+    
     @wire(reviews) reviewTable({error, data}){
         if (data) {
             this.reviewList = data;
@@ -29,6 +32,8 @@ export default class Reviews extends LightningElement {
             this.error = error;
         }
     };
+
+    //code for form to create reviews to test table functions
     fields = [BOOK_FIELD, RATING_FIELD, REVIEW_FIELD, DATE_FIELD];
     data = [];
     handleSuccess(event) {

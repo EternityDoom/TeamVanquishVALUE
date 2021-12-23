@@ -1,9 +1,9 @@
-<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
-    <aura:attribute name="message" type="String" default="Awaiting your submission"/>
+<aura:component implements="force:hasRecordId,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="message" type="String" default="Please fill out this form and we will get back to you within 3 business days"/>
 	<aura:attribute name="binal" type="Boolean" default="true"/>
     <aura:attribute name="binal2" type="Boolean" default="false"/>
     <aura:attribute name="binal3" type="Boolean" default="false"/>
-     <lightning:card title="Daniel's Aura Addition" iconName="custom:custom46">
+     <lightning:card title="Contact Form" iconName="custom:custom46">
         <div class="c-container">
             <lightning:layout>
                 <aura:renderif isTrue="{!v.binal}">

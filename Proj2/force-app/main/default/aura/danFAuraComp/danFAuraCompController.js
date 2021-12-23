@@ -9,7 +9,7 @@
     },
     
     handleSuccess : function(component, event, helper) {
-        component.set('v.message', 'Submission Completed!');
+        component.set('v.message', 'Your contact card is now in our library!');
         component.set('v.binal', 'false');
         component.set('v.binal2', 'true');
     }
