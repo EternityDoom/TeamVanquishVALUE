@@ -33,7 +33,9 @@ Tasked with creating a compelling experience from a business previously explored
 
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+The main component of this project is the "interactions" LWC.  This component contains three tabs.  The first tab contains the Web-to-Lead form which a postential customer who visits the website will fill out to submit their contact information to the business.  The second tab is a single field Web-to-Case guest form intend for use as an anonymous feedback and suggestion submission form. The final tab contains a data table that displays any active feedback and suggestions for public view.
+
+
 
 ## Contributors
 
