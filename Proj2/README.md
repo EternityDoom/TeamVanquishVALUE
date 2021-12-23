@@ -8,7 +8,9 @@ Working in a small team, developers are tasked with creating a consistently-styl
 
 * Visual Studio Code
 * Apex
+* HTML
 * JavaScript
+* CSS
 * Salesforce Platform Tools
 
 ## Features
