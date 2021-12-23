@@ -1,14 +1,14 @@
-# PROJECT NAME
+# Mr Booksy
 
 ## Project Description
 
-Here goes your awesome project description!
+Created a customer-facing Experience Cloud website for a fictional company. Used all necessary declarative customization, and created a series of Lightning Web/Aura components to add funtionality to the site. Also created Apex code to provide server-side behavior for the components.
 
 ## Technologies Used
 
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* Salesforce
+* Lightning Framework
+* Experience Cloud
 
 ## Features
 
