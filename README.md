@@ -44,10 +44,10 @@ To-do list:
 
 ## Contributors
 
-Manuel Guzman
-Jason Schley
-Daniel Ferraro
-Shayan Parvizi
+* Manuel Guzman
+* Jason Schley
+* Daniel Ferraro
+* Shayan Parvizi
 
 ## License
 This project uses the following license: [MIT License](https://choosealicense.com/licenses/mit/).
