@@ -15,8 +15,9 @@ Created a customer-facing Experience Cloud website for a fictional company. Used
 ## Features
 
 List of features ready and TODOs for future development
-* 
-* Awesome feature 2
+* Created a LWC carousel that displays the Display URL field of each product(Books) in which we conveniently placed an image url. The purpose of this LWC was to showcase
+the different books in our records.
+* Created different aura components that interacted with eachothers lwcs
 * Awesome feature 3
 
 To-do list:
