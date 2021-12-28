@@ -17,31 +17,53 @@ Created a customer-facing Experience Cloud website for a fictional company. Used
 List of features ready and TODOs for future development
 * Created a LWC carousel that displays the Display URL field of each product(Books) in which we conveniently placed an image url. The purpose of this LWC was to showcase
 the different books in our records.
-* Created different aura components that interacted with eachothers lwcs
-* Awesome feature 3
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Display the average review score in the review table page in order to accurately measure the overall rating of a book based on their review ratings.
+* Create different aura components that interacted with each others lwcs.
+* Apex Classes and triggers to handle server-side logic for components. 
 
 ## Getting Started
    
-(include git clone command)
-(include all environment setup steps)
+Git commands:
 
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
+  -Git clone
 
-- All the `code` required to get started
-- Images of what it should look like
+  -Git add
+
+  -Git commit
+
+  -Git push
+Salesforce CLI:
+
+  -sfdx force:project:create --projectname Bookstore
+
+  -sfdx force:org:create -f project-scratch-def.json --nonamespace
+
+  -sfdx force:package:create
+
+  -sfdx force:package:version:create
+
+  -sfdx force:package:install
 
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+![front page](https://user-images.githubusercontent.com/43623906/147604025-2166370c-956e-4844-896a-e9dd905e9128.PNG)
+* This is the front page of our experience cloud here we inform the user about the rules to follow in order to leave a review.
+![createcontactpage](https://user-images.githubusercontent.com/43623906/147604038-a9421f7e-e1df-429e-829f-faeb7efb0595.PNG)
+* Contact form includes error message for invalid input.
+![viewrecpage](https://user-images.githubusercontent.com/43623906/147604050-37d7b3d3-98e1-48cf-afaf-1cd4bfa133ac.PNG)
+* This table displays the 10 most recent recommendations.
+![createrevpage](https://user-images.githubusercontent.com/43623906/147604056-04a6733f-0133-48b7-ab2b-a36a666ef254.PNG)
+* In this page we have 3 different components one displays the different products available in our data base. The other component displays the relevant information about the products displayed. Lastly but not least the other component conditionally displays a review form with the use of a button event.
+
 
 ## Contributors
 
-> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
+- Shayan Parvizi
+- Jason Schley
+- Daniel Ferraro
+- Manuel Guzman
 
 ## License
 This project uses the following license: [MIT License](https://choosealicense.com/licenses/mit/).
