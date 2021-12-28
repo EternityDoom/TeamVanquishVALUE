@@ -9,11 +9,13 @@ Created a customer-facing Experience Cloud website for a fictional company. Used
 * Salesforce
 * Lightning Framework
 * Experience Cloud
+* Github Desktop
+* Apex
 
 ## Features
 
 List of features ready and TODOs for future development
-* Awesome feature 1
+* 
 * Awesome feature 2
 * Awesome feature 3
 
