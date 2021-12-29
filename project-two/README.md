@@ -26,25 +26,17 @@ To-do list:
 ## Getting Started
    
 Git commands:
-
-  -Git clone
-
-  -Git add
-
-  -Git commit
-
-  -Git push
+  - Git clone
+  - Git add
+  - Git commit
+  - Git push
+  
 Salesforce CLI:
-
-  -sfdx force:project:create --projectname Bookstore
-
-  -sfdx force:org:create -f project-scratch-def.json --nonamespace
-
-  -sfdx force:package:create
-
-  -sfdx force:package:version:create
-
-  -sfdx force:package:install
+  - sfdx force:project:create --projectname Bookstore
+  - sfdx force:org:create -f project-scratch-def.json --nonamespace
+  - sfdx force:package:create
+  - sfdx force:package:version:create
+  - sfdx force:package:install
 
 ## Usage
 
